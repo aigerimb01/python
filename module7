@@ -8,7 +8,7 @@
 # Программа должна вывести номер потерянной карточки.
 
 
-
+мой способ
 lost_card = []
 N =int(input("Введите количество карточек: "))
 for num in range(1, N):
@@ -24,3 +24,14 @@ for newnum in range(N-num-1):
 
 print("Мы нашли вашу карточку!", lost_card)
 
+
+ответ
+
+totalCards = int(input(Введите количество карточек: ))
+totalSum = 0 
+for card in range(1, totalCards+1):
+  totalSum +=card
+for card in range(totalCards -1):
+  remaining_card = int(input("Номер оставшейся карты: "))
+  totalSum -= remaining_card
+print("Номер потерявшейся карты: ", totalSum )
